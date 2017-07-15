@@ -111,6 +111,21 @@ public class OSGiIntegrationTest {
                 // Load the current module from its built classes so we get the latest from Eclipse
                 bundle("reference:file:" + PathUtils.getBaseDir() + "/target/classes/"),
 
+                mavenBundle("org.osgi", "org.osgi.service.jpa").versionAsInProject(),
+                mavenBundle("org.osgi", "org.osgi.service.component.annotations").versionAsInProject(),
+                mavenBundle("org.osgi", "org.osgi.service.metatype.annotations").versionAsInProject(),
+                mavenBundle("com.h2database", "h2").versionAsInProject(),
+                mavenBundle("org.slf4j","slf4j-log4j12").versionAsInProject(),
+                mavenBundle("org.osgi","osgi.annotation").versionAsInProject(),
+                mavenBundle("org.osc.core","osc-service-api").versionAsInProject(),
+                mavenBundle("org.osgi","osgi.cmpn").versionAsInProject(),
+                mavenBundle("org.apache.aries.tx-control","tx-control-api").versionAsInProject(),
+                mavenBundle("org.glassfish.jersey.core","jersey-server").versionAsInProject(),
+                mavenBundle("org.glassfish.jersey.containers","jersey-container-servlet-core").versionAsInProject(),
+                mavenBundle("javax.servlet","javax.servlet-api").versionAsInProject(),
+                mavenBundle("com.fasterxml.jackson.jaxrs","jackson-jaxrs-json-provider").versionAsInProject(),
+                mavenBundle("com.fasterxml.jackson.core","jackson-annotations").versionAsInProject(),
+                
                 // And some dependencies
                 mavenBundle("org.apache.felix", "org.apache.felix.scr").versionAsInProject(),
 
