@@ -16,8 +16,7 @@
  *******************************************************************************/
 package org.osc.manager.rest.server;
 
-public interface SecureManagerServerRestConstants {
+public interface SecurityManagerServerRestConstants {
     // Because we started with versions in the URL, we will continue to have v1 in the URL
-    String SERVER_API_PATH_PREFIX = "/sm/server/v1";
-
+    String SERVER_API_PATH_PREFIX = "/sm";
 }

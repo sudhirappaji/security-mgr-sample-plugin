@@ -16,29 +16,28 @@
  *******************************************************************************/
 package org.osc.manager.ism.entities;
 
+import org.osc.sdk.manager.element.ManagerPolicyElement;
 
+public class PolicyEntity implements ManagerPolicyElement {
 
-
-public class PolicyElements {
-    
     private Long id;
-    
     private String name;
-    
-    public Long getId() {
-        return id;
+
+    @Override
+    public String getId() {
+        return this.id.toString();
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
+    @Override
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
-
 }
