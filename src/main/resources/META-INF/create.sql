@@ -22,7 +22,7 @@ alter table POLICY add constraint if not exists POLICY_NAME UNIQUE (name);
 
 alter table DEVICE_MEMBER add constraint if not exists FK_DEVICE foreign key (device_fk) references DEVICE;
 
-alter table DEVICE add constraint DEVICE_NAME UNIQUE (name);
+alter table DEVICE add constraint if not exists DEVICE_NAME UNIQUE (name);
 
-alter table DEVICE_MEMBER add constraint DEVICEMEMBER_NAME UNIQUE (name);
+alter table DEVICE_MEMBER add constraint if not exists DEVICEMEMBER_NAME UNIQUE (name);
 
